@@ -64,7 +64,6 @@ Finished in 0.001822 seconds.
 
 
 # Tasks
-* explain/implement what you could do to make this code more clean
 * modify the code so that when the environment variable BRANCH is set to master, we print `(=^ェ^=)` 
 otherwise, print `~=[,,_,,]:3`. 
 
@@ -77,14 +76,7 @@ example:
 
 `ALLCATS=yes bundle exec bin/make_go.rb`
 
-
-* explain why your refactor is ideal 
+* write tests that cover the BRANCH and ALLCATS environment variable matrix
+* explain/implement what you could do to make this code more clean
+* explain why your refactor is ideal
 * use a pull request to submit your solution
-
-* write tests that verify: 
-  1. set env var BRANCH=master and ALLCATS=no and verify only happy cat is printed
-  1. set env var BRANCH=master and ALLCATS=yes and verify we print both
-  1. set env var BRANCH=cheese and ALLCATS=no and verify only nyan cat is printed
-  1. set env var BRANCH=cheese and ALLCATS=yes and verify we print both
-
-
