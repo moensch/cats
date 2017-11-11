@@ -1,6 +1,5 @@
 module Cats
   class Basemeow
-    attr_accessor :times
     def initialize (times, meow)
       @times = times
       @meow = meow

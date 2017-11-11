@@ -1,8 +1,8 @@
 require_relative './basemeow'
 module Cats
   class Meow < Basemeow
-    def initialize
-      super(40, '(=^ェ^=)')
+    def initialize (times = 40)
+      super(times, '(=^ェ^=)')
     end
 
     def whiskers

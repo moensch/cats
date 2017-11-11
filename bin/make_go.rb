@@ -2,10 +2,8 @@
 require 'cats'
 class MakeGo
   def self.run
-    a = Cats::Meow.new
-    a.times = 1
-    b = Cats::Meows.new
-    b.times = 1
+    a = Cats::Meow.new(1)
+    b = Cats::Meows.new(1)
     case
       when ENV['ALLCATS'] == 'yes'
         a.say
