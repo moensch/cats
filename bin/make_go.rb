@@ -3,10 +3,21 @@ require 'cats'
 class MakeGo
   def self.run
     a = Cats::Meow.new
+    a.times = 1
     b = Cats::Meows.new
-    a.say if a.to_boolean(ENV['ALLCATS'])
-    b.say if b.to_boolean(ENV['ALLCATS'])
+    b.times = 1
+    case
+      when ENV['ALLCATS'] == 'yes'
+        a.say
+        b.say
+      when ENV['BRANCH'] == 'master'
+        a.say
+      else
+        b.say
+    end
   end
 end
 
-MakeGo.run
+if __FILE__ == $0
+  MakeGo.run
+end
