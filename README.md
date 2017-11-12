@@ -31,7 +31,7 @@ rake test
 
 and get the following result
 
-<code>
+```
 Loaded suite ~/.rvm/gems/ruby-2.4.2@global/gems/rake-12.0.0/lib/rake/rake_test_loader
 Started
 N
@@ -58,9 +58,7 @@ Finished in 0.001822 seconds.
 0% passed
 ----------------------------------------------------------------------------------------------------------------------------------
 548.85 tests/s, 0.00 assertions/s
-</code> 
-
-
+```
 
 
 # Tasks
