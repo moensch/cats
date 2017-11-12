@@ -1,10 +1,10 @@
 require 'test/unit'
+require 'cats'
 
-class MyTest < Test::Unit::TestCase
+class MeowsTest < Test::Unit::TestCase
   # Called before every test method runs. Can be used
   # to set up fixture information.
   def setup
-    # Do nothing
   end
 
   # Called after every test method runs. Can be used to tear
@@ -15,7 +15,8 @@ class MyTest < Test::Unit::TestCase
   end
 
   # Fake test
-  def test_fail
-    raise('Not implemented')
+  def test_meow
+    m = Cats::Meows.new()
+    assert_true(m.meow == '~=[,,_,,]:3', 'Meow is set to njancat')
   end
 end
