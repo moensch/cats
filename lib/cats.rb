@@ -1,4 +1,5 @@
 require 'cats/version'
+require 'cats/basemeow'
 require 'cats/meow'
 require 'cats/meows'
 

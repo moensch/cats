@@ -1,4 +1,3 @@
-require_relative './basemeow'
 module Cats
   class Meow < Basemeow
     def initialize (times = 40)

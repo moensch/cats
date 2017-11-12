@@ -1,6 +1,4 @@
 #!/usr/bin/env/ruby
-lib = File.expand_path('../../lib', __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'cats'
 require_relative '../bin/make_go'
 require 'test/unit'
