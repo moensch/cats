@@ -4,13 +4,17 @@ class MakeGo
   def self.run
     a = Cats::Meow.new(1)
     b = Cats::Meows.new(1)
+
     case
       when ENV['ALLCATS'] == 'yes'
+        # ALLCATS=yes prints both, irrespective of BRANCH value
         a.say
         b.say
       when ENV['BRANCH'] == 'master'
+        # BRANCH=master prints happycat
         a.say
-      else
+      when ENV.has_key?('BRANCH')
+        # BRANCH defined but not master prints njancat
         b.say
     end
   end

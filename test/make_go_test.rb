@@ -63,14 +63,14 @@ class MakeGoTest < Test::Unit::TestCase
   def test_branch_nil_allcats_nil
     output = capture_output do MakeGo.run end
     assert_not_match(@re_happy, output[0], "Happy cat is not printed")
-    assert_match(@re_njan, output[0], "Njan cat is printed")
+    assert_not_match(@re_njan, output[0], "Njan cat is printed")
   end
 
   def test_branch_nil_allcats_no
     ENV['ALLCATS'] = 'no'
     output = capture_output do MakeGo.run end
     assert_not_match(@re_happy, output[0], "Happy cat is not printed")
-    assert_match(@re_njan, output[0], "Njan cat is printed")
+    assert_not_match(@re_njan, output[0], "Njan cat is printed")
   end
 
   def test_branch_nil_allcats_yes
