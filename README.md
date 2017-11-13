@@ -78,3 +78,20 @@ example:
 * explain/implement what you could do to make this code more clean
 * explain why your refactor is ideal
 * use a pull request to submit your solution
+
+# Sam's notes
+
+* Refactor
+  * Moved common attributes and functions between Meow and Meows
+    into base class
+  * Code is more maintainable. If there was a bug found in the
+    is_boolean function, it would only have to be fixed in one place
+
+* Things I thought about doing but didn't do
+  * Rename Meow -> Happycat and Meows -> Njancat (more descriptive names)
+    Not done to preserve the original class names and interface
+  * Use `mocha` to mock the `puts` function, or overload `puts` within
+    `Cats::Basemeow` in the unit test to better capture output.
+    Decided against it because `capture_output` seemed very clean to me.
+  * Separate the program `make_go.rb` from the `cats` gem in a separate repo.
+    Wanted to keep it all together for the sake of this exercise.
