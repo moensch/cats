@@ -1,5 +1,7 @@
 # Cats
 
+[![Build Status](https://travis-ci.org/moensch/cats.svg?branch=master)](https://travis-ci.org/moensch/cats)
+
 # Summary
 
 * this is the cats gem it prints fun stuff to a screen
