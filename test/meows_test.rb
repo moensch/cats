@@ -17,6 +17,6 @@ class MeowsTest < Test::Unit::TestCase
   # Fake test
   def test_meow
     m = Cats::Meows.new()
-    assert_true(m.meow == '~=[,,_,,]:3', 'Meow is set to njancat')
+    assert_true(m.meow == '~=[,,_,,]:3', 'Meow is set to nyancat')
   end
 end

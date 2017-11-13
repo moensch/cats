@@ -14,7 +14,7 @@ class MakeGo
         # BRANCH=master prints happycat
         a.say
       when ENV.has_key?('BRANCH')
-        # BRANCH defined but not master prints njancat
+        # BRANCH defined but not master prints nyancat
         b.say
     end
   end
